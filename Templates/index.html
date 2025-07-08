@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnival Games – Higher or Lower</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='game.js') }}"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Carnival Games 🎡</h1>
+    <p class="tagline">Is it Higher or lower? 💖</p>
+    
+    <div class="score">Score: <span id="score">0</span></div>
+
+    <div class="card" id="card">
+  <img id="card-image" src="" alt="Card Art" class="card-art">
+  <p id="stat-label">Press Start to Play</p>
+  <p id="stat-value">--</p>
+</div>
+
+    <div class="buttons">
+      <button id="start">Start Game</button>
+      <button id="higher" disabled>Higher</button>
+      <button id="lower" disabled>Lower</button>
+    </div>
+
+    <div class="message" id="message"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

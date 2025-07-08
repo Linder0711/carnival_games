@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffe6f0, #fce4ec);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #d63384;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: #b30059;
+}
+
+/* Score & Card */
+.score {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #fff0f5;
+  border: 2px dashed #ff80bf;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-art {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+.buttons button {
+  background-color: #ff99cc;
+  border: none;
+  padding: 8px 16px;
+  margin: 4px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9em;
+}
+
+.buttons button:hover {
+  background-color: #e055a0;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Message */
+.message {
+  margin-top: 10px;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-align: center;
+}
+.card-art {
+  max-height: 150px;
+  object-fit: contain;
+}
